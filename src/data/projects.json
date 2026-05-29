@@ -12,7 +12,7 @@
         "CSS",
         "DOM APIs"
       ],
-      "image": "/Portfolio/src/assets/project-images/Web Desktop.gif",
+      "image": "project-images/web-desktop.gif",
       "githubLink": "https://github.com/Sandee999/desktop-like-portfolio",
       "liveLink": "https://sandee999.github.io/desktop-like-portfolio/"
     },
@@ -29,7 +29,7 @@
         "Hugging Face Models",
         "AI APIs"
       ],
-      "image": "/Portfolio/src/assets/project-images/Sehari.png",
+      "image": "project-images/sehari.png",
       "githubLink": "https://github.com/Sandee999/Sehari"
     },
     {
@@ -56,7 +56,7 @@
         "FFmpeg.wasm",
         "Web Workers"
       ],
-      "image": "/Portfolio/src/assets/project-images/FormatShift.gif",
+      "image": "project-images/formatShift.gif",
       "githubLink": "https://github.com/Sandee999/FormatShift",
       "liveLink":"https://sandee999.github.io/FormatShift/"
     },
@@ -72,7 +72,7 @@
         "NativeWind",
         "Async Storage"
       ],
-      "image": "/Portfolio/src/assets/project-images/Tickly.png",
+      "image": "project-images/tickly.png",
       "githubLink": "https://github.com/Sandee999/tickly"
     }
   ]
