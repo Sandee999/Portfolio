@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "name" : "Web Desktop",
+      "subtitle": "Interactive Web Desktop",
+      "description": "A desktop-like portfolio application featuring draggable windows, z-index management, and an operating-system-inspired user experience.",
+      "duration": "2025",
+      "techStack": [
+        "React",
+        "JavaScript",
+        "React Context",
+        "CSS",
+        "DOM APIs"
+      ],
+      "image": "/Portfolio/src/assets/project-images/Web Desktop.gif",
+      "githubLink": "https://github.com/Sandee999/desktop-like-portfolio",
+      "liveLink": "https://sandee999.github.io/desktop-like-portfolio/"
+    },
+    {
+      "name": "Sehari",
+      "subtitle": "AI Food Recommendation System",
+      "description": "An AI-powered application that generates personalized meal plans and food recommendations based on dietary preferences.",
+      "duration": "2023",
+      "techStack": [
+        "JavaScript",
+        "React Native",
+        "Supabase",
+        "Vector Database",
+        "Hugging Face Models",
+        "AI APIs"
+      ],
+      "image": "/Portfolio/src/assets/project-images/Sehari.png",
+      "githubLink": "https://github.com/Sandee999/Sehari"
+    },
+    {
+      "name": "OnGO",
+      "subtitle": "Autonomous Delivery Vehicle",
+      "description": "An IoT-based autonomous delivery vehicle integrating sensors, hardware devices, and navigation systems.",
+      "duration": "2026",
+      "techStack": [
+        "Raspberry Pi",
+        "IoT Devices",
+        "Hardware Integration",
+        "Sensor Communication"
+      ]
+    },
+    {
+      "name": "FormatShift",
+      "subtitle": "Universal File Converter",
+      "description": "A privacy-focused client-side file converter that processes media directly in the browser using WebAssembly.",
+      "duration": "2026",
+      "techStack": [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "FFmpeg.wasm",
+        "Web Workers"
+      ],
+      "image": "/Portfolio/src/assets/project-images/FormatShift.gif",
+      "githubLink": "https://github.com/Sandee999/FormatShift",
+      "liveLink":"https://sandee999.github.io/FormatShift/"
+    },
+    {
+      "name": "Tickly",
+      "subtitle": "Class Attendance Tracker",
+      "description": "A cross-platform mobile application for tracking class attendance with offline support and scalable navigation.",
+      "duration": "2023-2024",
+      "techStack": [
+        "React Native",
+        "Expo",
+        "Expo Router",
+        "NativeWind",
+        "Async Storage"
+      ],
+      "image": "/Portfolio/src/assets/project-images/Tickly.png",
+      "githubLink": "https://github.com/Sandee999/tickly"
+    }
+  ]
+}

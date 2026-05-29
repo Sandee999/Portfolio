@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+#root {
+  --bg: #0a0d17;
+  --text: #f1eeea;
+  --text-muted: #a3a5af;
+  --text-muted-dim: #727684;
+  --accent: #6be8be;
+  --accent-light: #173932;
+  --border: #1d2230;
+}
+
+.dot-background {
+  --dot-color: var(--bg-alt);
+  --dot-size: 1px;
+  --dot-space: 48px;
+
+  background-image:
+    radial-gradient(circle, var(--dot-color) var(--dot-size), transparent 0);
+
+  background-size: var(--dot-space) var(--dot-space);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+@keyframes arrowDown {
+  0% {
+    opacity: 0;
+    transform: rotate(-45deg) translate(0, 0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(-45deg) translate(-12px, 12px);
+  }
+}
+
+.arrow {
+  border-left: 2px solid var(--text-muted);
+  border-bottom: 2px solid var(--text-muted);
+  transform: rotate(-45deg);
+  animation: arrowDown 1.5s ease-in-out infinite;
+}
+
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-roboto: "Roboto", sans-serif;
+  --outline-text-color: "white"
+}
+
+@utility font-inter {
+  font-family: var(--font-inter);
+}
+
+@utility font-open-sans {
+  font-family: var(--font-open-sans);
+}
+
+@utility font-playfair {
+  font-family: var(--font-playfair);
+}
+
+@utility font-roboto {
+  font-family: var(--font-roboto);
+}
