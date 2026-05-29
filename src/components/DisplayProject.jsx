@@ -3,7 +3,7 @@ import UnderscoredText from "./UnderscoredText";
 export function DisplayProject({ project, reverse }) {
 
   return(
-    <div className={`w-full p-20 flex flex-col ${reverse ? "items-end" : "items-start"}`}>
+    <div className={`w-full px-5 sm:px-10 py-20 flex flex-col ${reverse ? "items-end" : "items-start"}`}>
       <UnderscoredText text={project.name} className={"font-thin"} />
       <div className={`flex ${reverse ? "flex-row-reverse" : "flex-row"} sm:flex-nowrap flex-wrap mt-10 gap-10 items-center justify-center`}>
         <div className="flex flex-col gap-4">

@@ -9,13 +9,11 @@ import Projects from '@/data/projects.json' with { type: 'json' };
 function App() {
   return (
     <div className="w-full min-h-screen bg-(--bg) text-(--text)">
-      <section className="w-full h-16 flex items-center justify-end px-10 gap-6 fixed top-0 left-0 bg-(--bg) z-50">
-        <nav className="w-full h-16 flex items-center justify-end px-10 gap-6">
-          <a href="#home" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Home</a>
-          <a href="#skills" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Skills</a>
-          <a href="#projects" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Projects</a>
-          <a href="#contact" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Contact</a>
-        </nav>
+      <section className="w-full h-16 flex items-center justify-end px-10 gap-6 fixed top-0 left-0 bg-(--bg) z-50 hidden sm:flex">
+        <a href="#home" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Home</a>
+        <a href="#skills" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Skills</a>
+        <a href="#projects" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Projects</a>
+        <a href="#contact" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Contact</a>
       </section>
       <section id="home" className="w-full h-screen mb-10 flex flex-col items-center justify-center">
         <div className='w-[80%] h-[80%] flex flex-col justify-center'>
