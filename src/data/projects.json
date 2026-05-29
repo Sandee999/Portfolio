@@ -56,7 +56,7 @@
         "FFmpeg.wasm",
         "Web Workers"
       ],
-      "image": "project-images/formatShift.gif",
+      "image": "project-images/formatshift.gif",
       "githubLink": "https://github.com/Sandee999/FormatShift",
       "liveLink":"https://sandee999.github.io/FormatShift/"
     },
