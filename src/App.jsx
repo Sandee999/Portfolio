@@ -5,11 +5,13 @@ import SkillSet from '@/components/SkillSet';
 import Skills from '@/data/skills.json' with { type: 'json' };
 import { DisplayProject } from '@/components/DisplayProject';
 import Projects from '@/data/projects.json' with { type: 'json' };
+import Tooltip from './components/ToolTip';
+import JntuhLogo from "@/assets/JNTUH.png";
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-(--bg) text-(--text)">
-      <section className="w-full h-16 flex items-center justify-end px-10 gap-6 fixed top-0 left-0 bg-(--bg) z-50 hidden sm:flex">
+    <div className="w-full min-h-screen text-(--text)">
+      <section className="w-full h-16 items-center justify-end px-10 gap-6 fixed top-0 left-0 bg-(--bg) z-50 hidden sm:flex">
         <a href="#home" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Home</a>
         <a href="#skills" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Skills</a>
         <a href="#projects" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Projects</a>
@@ -17,27 +19,33 @@ function App() {
       </section>
       <section id="home" className="w-full h-screen mb-10 flex flex-col items-center justify-center">
         <div className='w-[80%] h-[80%] flex flex-col justify-center'>
-          <UnderscoredText text="Sandeep">
+          <UnderscoredText text="Sandeep" tooltip="Focused on transforming complex ideas into intuitive and scalable software solutions">
             <div className='animate-ping w-1 h-1 bg-green-600 rounded-full' />
             <p className='font-open-sans text-xs text-(--text-muted-dim)'> Open to Software Engineering Internship Opportunities</p>
           </UnderscoredText>
-          <h3 className='text-(--text-muted) text-lg font-inter mt-6'>A University Student In Hyderabad, India.</h3>
+          <Tooltip content="Currently pursuing an Integrated Dual Degree (B.Tech + M.Tech) in Computer Science and Engineering at JNTUH, Hyderabad." image={JntuhLogo}>
+            <h3 className='text-(--text-muted) text-lg font-inter mt-6'>A University Student In Hyderabad, India.</h3>          
+          </Tooltip>
           <h4 className='flex flex-wrap items-center gap-2 text-(--text-muted) text-lg font-inter font-light mt-4'>
-            <span>Web Development</span>
+            <Tooltip content="I have experience in building web applications using React.">
+              <span>Web Development</span>
+            </Tooltip>
             <span className='text-6xl hidden sm:inline'>{"\u00B7"}</span>
-            <span>Mobile Development</span>
+            <Tooltip content="I have experience in building mobile applications using Flutter and React Native.">
+              <span>Mobile Development</span>
+            </Tooltip>
           </h4>
           <div className='flex items-center gap-4 mt-8'>
             <a href="mailto:venkatasandeeptalatam@example.com" target='_blank'>
               <div className='px-4 py-2 group flex gap-3 items-center'>
-                <img src={MailLogo} alt="Mail" className='w-7 brightness-0 invert' />
-                <p className='text-(--text) text-lg group-hover:underline'>Mail</p>
+                <img src={MailLogo} alt="Mail" className='w-5 brightness-0 invert' />
+                <p className='text-(--text) text-base group-hover:underline'>Mail</p>
               </div>
             </a>
             <a href="https://www.github.com/sandee999" target='_blank'>
               <div className='px-4 py-2 group flex gap-3 items-center'>
-                <img src={GithubLogo} alt="GitHub" className='w-7 brightness-0 invert' />
-                <p className='text-(--text) text-lg group-hover:underline'>Github</p>
+                <img src={GithubLogo} alt="GitHub" className='w-5 brightness-0 invert' />
+                <p className='text-(--text) text-base group-hover:underline'>Github</p>
               </div>
             </a>
           </div>
@@ -62,9 +70,9 @@ function App() {
           <DisplayProject key={index} project={project} reverse={index % 2 !== 0} />
         ))}
       </section>
-      <section id="contact" className="w-full h-64 flex flex-col items-center justify-center">
+      <section id="contact" className="w-full h-64 pb-16 flex flex-col items-center justify-center">
         <h2 className='text-4xl font-thin text-(--text-muted)'>Find Me</h2>
-        <div className='flex items-center gap-6 mt-6'>
+        <div className='flex flex-wrap items-center justify-center gap-6 mt-6'>
           <a href="mailto:venkatasandeeptalatam@example.com" target='_blank'>
             <div className='px-4 py-2 group flex gap-3 items-center'>
               <img src={MailLogo} alt="Mail" className='w-7 brightness-0 invert' />

@@ -5,9 +5,11 @@
   --text: #f1eeea;
   --text-muted: #a3a5af;
   --text-muted-dim: #727684;
-  --accent: #6be8be;
-  --accent-light: #173932;
   --border: #1d2230;
+}
+
+#root {
+  background: var(--bg);
 }
 
 .dot-background {
