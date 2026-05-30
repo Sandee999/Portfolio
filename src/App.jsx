@@ -36,7 +36,7 @@ function App() {
             </Tooltip>
           </h4>
           <div className='flex items-center gap-4 mt-8'>
-            <a href="mailto:venkatasandeeptalatam@example.com" target='_blank'>
+            <a href="mailto:venkatasandeeptalatam@gamil.com" target='_blank'>
               <div className='px-4 py-2 group flex gap-3 items-center'>
                 <img src={MailLogo} alt="Mail" className='w-5 brightness-0 invert' />
                 <p className='text-(--text) text-base group-hover:underline'>Mail</p>
@@ -70,13 +70,13 @@ function App() {
           <DisplayProject key={index} project={project} reverse={index % 2 !== 0} />
         ))}
       </section>
-      <section id="contact" className="w-full h-64 pb-16 flex flex-col items-center justify-center">
+      <section id="contact" className="w-full h-64 py-16 flex flex-col items-center justify-center">
         <h2 className='text-4xl font-thin text-(--text-muted)'>Find Me</h2>
         <div className='flex flex-wrap items-center justify-center gap-6 mt-6'>
-          <a href="mailto:venkatasandeeptalatam@example.com" target='_blank'>
+          <a href="mailto:venkatasandeeptalatam@gamil.com" target='_blank'>
             <div className='px-4 py-2 group flex gap-3 items-center'>
               <img src={MailLogo} alt="Mail" className='w-7 brightness-0 invert' />
-              <p className='text-(--text) text-lg group-hover:underline'>Mail: venkatasandeeptalatam@example.com</p>
+              <p className='text-(--text) text-lg group-hover:underline'>Mail: venkatasandeeptalatam@gamil.com</p>
             </div>
           </a>
           <a href="https://www.github.com/sandee999" target='_blank'>
