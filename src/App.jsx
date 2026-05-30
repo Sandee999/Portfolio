@@ -19,7 +19,7 @@ function App() {
       </section>
       <section id="home" className="w-full h-screen mb-10 flex flex-col items-center justify-center">
         <div className='w-[80%] h-[80%] flex flex-col justify-center'>
-          <UnderscoredText text="Sandeep" tooltip="Focused on transforming complex ideas into intuitive and scalable software solutions">
+          <UnderscoredText text="Sandeep" tooltip="hi there, I'm Talatam Venkata Sandeep">
             <div className='animate-ping w-1 h-1 bg-green-600 rounded-full' />
             <p className='font-open-sans text-xs text-(--text-muted-dim)'> Open to Software Engineering Internship Opportunities</p>
           </UnderscoredText>
@@ -31,7 +31,7 @@ function App() {
               <span>Web Development</span>
             </Tooltip>
             <span className='text-6xl hidden sm:inline'>{"\u00B7"}</span>
-            <Tooltip content="I have experience in building mobile applications using Flutter and React Native.">
+            <Tooltip content="I have experience in building mobile applications using React Native.">
               <span>Mobile Development</span>
             </Tooltip>
           </h4>

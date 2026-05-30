@@ -12,7 +12,7 @@ export default function Tooltip({ children, content, image }) {
       {children}
 
       {isOpen && (
-        <div className="absolute left-0 sm:left-40 top-full w-[20rem] z-50 bg-(--bg)">
+        <div className="absolute -left-1 sm:left-40 top-full w-[20rem] z-50 bg-(--bg)">
           <div className="m-2 border p-4 flex flex-col items-center justify-center gap-3" >
           {image && 
             <img
