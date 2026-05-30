@@ -16,7 +16,9 @@ export function DisplayProject({ project, reverse }) {
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <img src={project.image} alt="Image is not available" className="max-h-72 h-auto rounded-lg object-cover" />
+          {
+            project.image && <img src={project.image} alt="Image is not available" className="max-h-72 h-auto rounded-lg object-cover" />
+          }
           <div className="flex items-center gap-4 justify-evenly">
             {project.githubLink && <a href={project.githubLink} target="_blank" className="text-(--text) text-lg font-inter hover:underline">
               Source
