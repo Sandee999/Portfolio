@@ -71,13 +71,13 @@ function App() {
           <SkillSet title="Web Development" arrSkills={Skills.webDevelopment} />
         </div>
       </section>
-      <section id="projects" className="w-full pb-10 flex flex-col items-center">
+      <section id="projects" className="w-full flex flex-col items-center">
         <UnderscoredText text="Projects" className='text-6xl font-thin' />
         {Projects.projects.map((project, index) => (
           <DisplayProject key={index} project={project} reverse={index % 2 !== 0} />
         ))}
       </section>
-      <section id="contact" className="w-full py-16 flex flex-col items-center justify-center">
+      <section id="contact" className="w-full py-16 flex flex-col items-center justify-center bg-(--bg)">
         <h2 className='text-4xl font-thin text-(--text-muted)'>Find Me</h2>
         <div className='flex flex-wrap items-center justify-center gap-6 mt-6'>
           <a href="mailto:venkatasandeeptalatam@gamil.com" target='_blank'>
