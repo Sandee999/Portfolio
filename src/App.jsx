@@ -9,6 +9,13 @@ import Tooltip from './components/ToolTip';
 import JntuhLogo from "@/assets/JNTUH.png";
 
 function App() {
+  const aboutMeToolTip = "Hi, I'm Talatam Venkata Sandeep. While design isn't my strongest suit, \
+  I excel at coding and enjoy building efficient, reliable software solutions.";
+  const webDevToolTip = "With my experience in React and Tailwind CSS, \
+  I bring ideas to life by building websites that deliver seamless user experiences.";
+  const mobileDevToolTip = "Using React Native, I build fast and responsive mobile applications for Android.\
+   I have not yet developed for iOS due to resource constraints.";
+
   return (
     <div className="w-full min-h-screen text-(--text)">
       <section className="w-full h-16 items-center justify-end px-10 gap-6 fixed top-0 left-0 bg-(--bg) z-50 hidden sm:flex">
@@ -19,7 +26,7 @@ function App() {
       </section>
       <section id="home" className="w-full h-screen mb-10 flex flex-col items-center justify-center">
         <div className='w-[80%] h-[80%] flex flex-col justify-center'>
-          <UnderscoredText text="Sandeep" tooltip="hi there, I'm Talatam Venkata Sandeep">
+          <UnderscoredText text="Sandeep" tooltip={aboutMeToolTip}>
             <div className='animate-ping w-1 h-1 bg-green-600 rounded-full' />
             <p className='font-open-sans text-xs text-(--text-muted-dim)'> Open to Software Engineering Internship Opportunities</p>
           </UnderscoredText>
@@ -27,11 +34,11 @@ function App() {
             <h3 className='text-(--text-muted) text-lg font-inter mt-6'>A University Student In Hyderabad, India.</h3>          
           </Tooltip>
           <h4 className='flex flex-wrap items-center gap-2 text-(--text-muted) text-lg font-inter font-light mt-4'>
-            <Tooltip content="I have experience in building web applications using React.">
+            <Tooltip content={webDevToolTip}>
               <span>Web Development</span>
             </Tooltip>
             <span className='text-6xl hidden sm:inline'>{"\u00B7"}</span>
-            <Tooltip content="I have experience in building mobile applications using React Native.">
+            <Tooltip content={mobileDevToolTip}>
               <span>Mobile Development</span>
             </Tooltip>
           </h4>

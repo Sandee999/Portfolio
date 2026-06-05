@@ -21,7 +21,7 @@ export default function Tooltip({ children, content, image }) {
               className="w-full object-contain"
             />
           }
-          <p className="text-center text-sm text-(--text-muted) font-medium font-inter">
+          <p className="text-left text-sm text-(--text-muted) font-medium font-inter">
             {content}
           </p>
           </div>
