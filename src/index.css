@@ -2,6 +2,7 @@
 
 #root {
   --bg: #0a0d17;
+  --bg-alt: #1d2230;
   --text: #f1eeea;
   --text-muted: #a3a5af;
   --text-muted-dim: #727684;
@@ -15,7 +16,7 @@
 .dot-background {
   --dot-color: var(--bg-alt);
   --dot-size: 1px;
-  --dot-space: 48px;
+  --dot-space: 32px;
 
   background-image:
     radial-gradient(circle, var(--dot-color) var(--dot-size), transparent 0);
@@ -59,7 +60,7 @@
   --font-open-sans: "Open Sans", sans-serif;
   --font-playfair: "Playfair Display", serif;
   --font-roboto: "Roboto", sans-serif;
-  --outline-text-color: "white"
+  --outline-text-color: white 
 }
 
 @utility font-inter {

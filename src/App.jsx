@@ -17,8 +17,8 @@ function App() {
    I have not yet developed for iOS due to resource constraints.";
 
   return (
-    <div className="w-full min-h-screen text-(--text)">
-      <section className="w-full h-16 items-center justify-end px-10 gap-6 fixed top-0 left-0 bg-(--bg) z-50 hidden sm:flex">
+    <div className="w-full min-h-screen text-(--text) dot-background">
+      <section className="w-full h-16 items-center justify-end px-10 gap-6 fixed top-0 left-0 z-50 hidden sm:flex">
         <a href="#home" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Home</a>
         <a href="#skills" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Skills</a>
         <a href="#projects" className="text-(--text-muted) hover:text-(--text) transition-colors duration-300">Projects</a>
@@ -57,7 +57,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className='absolute bottom-10 flex flex-col items-center gap-2'>
+        <div className='relative bottom-10 flex flex-col items-center gap-2'>
           <p className='text-(--text-muted) text-sm font-roboto font-light'>Scroll Down</p>
           <div className="arrow w-6 h-6"/>
         </div>
